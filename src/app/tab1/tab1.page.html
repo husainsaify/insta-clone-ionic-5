@@ -1,0 +1,61 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="dark">
+        <ion-icon slot="icon-only" name="camera-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">
+      Instagram
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="dark">
+        <ion-icon slot="icon-only" name="send-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+      <!-- instagram Story section -->
+  <div class="storyList"  >
+    <ion-grid>
+      <ion-row class="stories" >
+        <!-- User Story section -->
+        <ion-col>
+          <div class="storyBack yourStryCol">
+            <div class="story ion-text-center">
+              <ion-avatar slot="start">
+                <img class="yourActiveStry" [src]="userDetails.picture.medium">
+              </ion-avatar>
+              <ion-label class="yourStry">Your Story</ion-label>
+            </div>
+          </div>
+        </ion-col>
+        <!-- User Story section -->
+        <ion-col *ngFor="let story of allFriendsDets" class="ion-margin-start">
+          <div class="storyBack">
+            <div class="story ion-text-center" >
+              <ion-avatar slot="start">
+                <img class="activeStory" [src]="story.picture.medium">
+              </ion-avatar>
+              <ion-label class="styUserName">{{ story.name.first }}</ion-label>
+            </div>
+          </div>
+        </ion-col>
+       
+      </ion-row>
+    </ion-grid>
+  </div>
+
+   <app-post-card *ngFor="let postDetail of allFriendsDets"
+    [postCardDets]="postDetail"></app-post-card>
+
+
+    <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</ion-content>

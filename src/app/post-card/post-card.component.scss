@@ -1,0 +1,76 @@
+.postCard{
+    box-shadow: none !important;
+    margin: none !important;
+    margin: 0 !important;
+    padding-bottom: 15px;
+}
+
+
+.postUserName{
+    margin-left: 10px;
+ }
+ 
+ .postImg img{
+     width:100%;
+     height: 100%;
+     object-fit: inherit;
+     object-position: inherit;
+ }
+
+ #likeCommentSection{
+     padding-left: 16px;
+ }
+
+ strong{
+     font-size: bold;
+     color: black;
+ }
+ 
+ .commentItem{
+    padding-left: 16px;
+    line-height: 1.4;
+    color: black;
+ }
+
+
+
+ .username{
+    font-weight: 700;
+    margin-right: 4px;
+    color: black;
+}
+
+.hashTag{
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+#viewCommentSection{
+    padding-left: 16px;
+    margin: 6px 0px;
+}
+
+.commentImg{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.addCommentSection{
+    margin-left: 14px;
+    color: #968e8e;
+}
+ 
+
+#viewSec{
+    padding-left: 16px;
+}
+
+.postUserName{
+    font-weight: bold;
+    color: black;
+}

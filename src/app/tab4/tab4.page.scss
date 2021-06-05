@@ -1,0 +1,52 @@
+.profileImg{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .profileStatus{
+//     padding-left: 5px;
+// }
+
+.profileInfo {
+    line-height: 1.5;
+    padding-bottom: 0;
+  }
+
+.hashTag{
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+.postItem img{
+    // width: 100%;
+    // height: 100%;
+    object-fit: inherit;
+     object-position: inherit;
+    //  padding-top: 4px;
+    //  padding-right: 4px;
+}
+
+.profileStatus {
+    text-align: center;
+  
+    .stats-number {
+      font-size: 17px;
+      font-weight: 700;
+    }
+  
+    .stats-label {
+      font-size: 13px;
+    }
+}
+
+.editButton{
+    color: black !important;
+}
+
+ion-segment-button {
+    --color-checked: black;
+}
+

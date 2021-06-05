@@ -1,0 +1,55 @@
+.commentItem{
+    padding: 0 12px;
+    line-height: 1.4;
+    color: black;
+ }
+
+ .commentProfileImg{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.username{
+    font-weight: 700;
+    margin-right: 4px;
+    color: black;
+}
+
+.hashTag{
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+.commentActions {
+    font-size: 13px;
+    color: var(--ion-color-medium);
+    margin-top: 8px;
+
+    .actionItem {
+      margin-right: 16px;
+    }
+}
+
+.replyProfileImg{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reply{
+    padding-left: 44px;
+}
+
+.userReply{
+    font-size: 13px;
+    color: var(--ion-color-medium);
+}
+
+.commentSection1{
+    padding-left: 12px;
+}

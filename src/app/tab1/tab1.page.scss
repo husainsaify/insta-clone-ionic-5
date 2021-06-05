@@ -1,0 +1,47 @@
+//================== instagram Story section=================
+.storyList{
+    border-bottom: 1px solid var(--ion-color-light);
+}
+.stories{
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap !important;
+}
+
+.yourStryCol{
+    padding-left: 8px;
+}
+
+.yourStry{
+    font-size: 13px;
+    color: rgb(116, 113, 113);
+}
+
+.styUserName{
+    font-size: 13px;
+    color: black;
+    
+}
+
+ion-avatar .activeStory{
+    
+    border-radius: 50% !important;
+    
+    border: 2px solid red !important;
+    padding: 2px;
+}
+
+ion-avatar .yourActiveStry{
+    
+    border-radius: 50% !important;
+    
+    border: 2px solid #ffff !important;
+    padding: 2px;
+}
+
+.postUserName{
+   margin-left: 10px;
+}
+
+

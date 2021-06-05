@@ -1,0 +1,45 @@
+// .tabIcon{
+//     color: #dadada;
+    
+// }
+// .tabIcon:hover{
+//     color: black;
+// }
+
+.profileTabImg{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-tab-bar {
+  --background: var(--ion-color-light);
+}
+
+ion-tab-button {
+  --color-selected: var(--ion-color-dark);
+}
+
+.icon-active {
+  display: none;
+}
+
+.tab-selected {
+  .icon-inactive {
+    display: none;
+  }
+
+  .icon-active {
+    display: block;
+  }
+
+  .profileTabImg{
+    width: 33px;
+    height: 33px;
+    border: 2px solid black !important;
+    }
+}
+
+

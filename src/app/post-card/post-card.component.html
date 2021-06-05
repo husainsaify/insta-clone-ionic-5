@@ -1,0 +1,81 @@
+
+  <ion-card class="ion-no-border no-padding postCard">
+    <ion-item lines="none">
+      <ion-avatar>
+        <img [src]="postCardDets.picture.medium">
+      </ion-avatar>
+      <ion-label class="postUserName">{{ postCardDets.name.first }}</ion-label>
+      <ion-button slot="end" fill="none">
+        <ion-icon class="icon-only" name="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+
+    <div class="postImg">
+       <img src="https://picsum.photos/300/200?random={{postCardDets.id.value}}">
+    </div>
+
+    <div class="postActions">
+      <ion-row>
+        <ion-col>
+          <ion-button size="small" fill="clear" color="dark">
+            <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+          </ion-button>
+          <ion-button size="small" fill="clear" color="dark" routerLink="/comments">
+            <ion-icon slot="icon-only" name="chatbubble-outline"></ion-icon>
+          </ion-button>
+          <ion-button size="small" fill="clear" color="dark">
+            <ion-icon slot="icon-only" name="send-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="auto">
+          <ion-button size="small" fill="clear" color="dark">
+            <ion-icon slot="icon-only" name="bookmark-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+     
+
+    <div id="likeCommentSection">
+      <strong>200 likes</strong>
+     </div>
+
+    <div id="postComment">
+      <div class="commentItem">
+        <span class="username">{{ postCardDets.name.first }}</span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut 
+          <a href="" class="hashTag">#labore</a> <a href="" class="hashTag">#dolore</a> <a href="" class="hashTag">#magna</a> <a href="" class="hashTag">#aliqua</a>
+      </div>
+
+     <div id="viewCommentSection">
+       View all 25 comments
+     </div>
+
+      <div class="commentItem">
+        <span class="username">Tony</span>
+          Lorem ipsum dolor sit amet
+      </div>
+
+      <ion-item lines="none">
+        <ion-avatar class="commentImg">
+          <img [src]="userDets.picture.medium">
+          
+        </ion-avatar>
+        <ion-label class="addCommentSection">Add a comment...</ion-label>
+        <ion-buttons slot="end">
+          <ion-button fill="none">
+            <ion-icon class="icon-only" name="heart" color="danger"></ion-icon>
+          </ion-button>
+          <ion-button fill="none">
+            <ion-icon name="add-circle-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+      <div id="viewSec">
+        2 days ago
+      </div>
+    </div>
+  </ion-card>
+
+
